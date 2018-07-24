@@ -1,14 +1,20 @@
 {
-  "name": "stator",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@stator/stator",
+  "version": "0.0.1",
+  "description": "WIP: a highly capable state-based routing library that treats the URI as an interface to application state, represented by a single object.",
   "main": "index.js",
   "scripts": {
+    "version": "git commit -am \"Update version number\" && git checkout -b release && git add -f dist/",
+    "deploy": "git push --tags && git checkout master && git branch -D release",
+    "release:pre": "npm version prerelease && npm run deploy",
+    "release:patch": "npm version patch && npm run deploy",
+    "release:minor": "npm version minor && npm run deploy",
+    "release:major": "npm version major && npm run deploy",
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jan Jorgensen",
+  "license": "GPL-3.0",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
@@ -35,5 +41,17 @@
       "prettier --write",
       "git add"
     ]
-  }
+  },
+  "dependencies": {
+    "husky": "^1.0.0-rc.13",
+    "lint-staged": "^7.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramblinjan/stator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ramblinjan/stator/issues"
+  },
+  "homepage": "https://github.com/ramblinjan/stator#readme"
 }

@@ -3,7 +3,7 @@
 
 WIP.
 
-Coming soon: a highly capable state-based routing library that simply treats
+Coming soon: a highly capable state-based routing library that treats
 the URI as an interface to application state, represented by a single object.
 
 Inspired by [can-route](https://canjs.com/doc/can-route.html).
