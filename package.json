@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "version": "git commit -am \"Update version number\" && git checkout -b release && git add -f dist/",
-    "deploy": "git push --tags && git checkout master && git branch -D release",
-    "release:pre": "npm version prerelease && npm run deploy",
-    "release:patch": "npm version patch && npm run deploy",
-    "release:minor": "npm version minor && npm run deploy",
-    "release:major": "npm version major && npm run deploy",
+    "publish": "git push origin && git push origin --tags",
+    "release:pre": "npm version prerelease && npm publish --access public",
+    "release:patch": "npm version patch && npm publish --access public",
+    "release:minor": "npm version minor && npm publish --access public",
+    "release:major": "npm version major && npm publish --access public",
     "test": "jest"
   },
   "keywords": [],
