@@ -1,10 +1,9 @@
 {
   "name": "@stator/stator",
-  "version": "0.0.1",
+  "version": "0.0.2-0",
   "description": "WIP: a highly capable state-based routing library that treats the URI as an interface to application state, represented by a single object.",
   "main": "index.js",
   "scripts": {
-    "version": "git commit -am \"Update version number\" && git checkout -b release && git add -f dist/",
     "publish": "git push origin && git push origin --tags",
     "release:pre": "npm version prerelease && npm publish --access public",
     "release:patch": "npm version patch && npm publish --access public",
