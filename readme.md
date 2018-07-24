@@ -26,7 +26,6 @@ Inspired by [can-route](https://canjs.com/doc/can-route.html).
 
 Honest answer: I'm obsessed with state management and only recently learned what a stator was when working on
 my "new" 1980 Honda CB650.
-web.
 
 Deeper answer: In an electric generator, the stator remains motionless while a rotor turns, generating electric current.
 The stator is the stationary part of a system that converts kinetic energy into electricity. 
